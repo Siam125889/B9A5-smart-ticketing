@@ -1,22 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BD Paribahan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-raleway {
+        font-family: "Raleway", sans-serif;
+      }
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <nav></nav>
+    <!-- header -->
+    <header class="font-raleway mt-10 lg:w-4/5 w-11/12 mx-auto">
+      <!-- navbar -->
+      <nav
+        class="flex justify-between items-center flex-col md:flex-row lg:flex-row space-y-4"
+      >
+        <h3 class="font-extrabold text-4xl">BD-Ticket</h3>
+        <ul class="flex gap-6">
+          <li class="list-none">Home</li>
+          <li class="list-none">About</li>
+          <li class="list-none">Destination</li>
+          <li class="list-none">Search</li>
+        </ul>
+        <button class="btn">
+          <span class="font-bold text-[#1DD100] text-xl">Bus</span>
+          <img src="images/bus-icon.png" alt="" />
+        </button>
+      </nav>
+      <!-- banner -->
+      <div
+        class="mt-10 bg-[url('images/banner.png')] bg-cover bg-center rounded-2xl"
+      >
+        <div class="flex flex-col justify-center h-[450px] space-y-9">
+          <h3 class="font-extrabold text-6xl text-center text-white">
+            End-to-End Travel with <br />
+            <span class="text-[#1DD100]">BD Paribahan</span>
+          </h3>
+          <p class="text-center text-white font-inter">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated <br />
+            testing features allow for a streamlined .
+          </p>
+          <div class="text-center">
+            <button href="#id" class="btn w-32 border-none bg-[#1DD100]">
+              Buy Tickets
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
+    <!-- main -->
+    <main class="font-raleway mt-16 lg:w-4/5 w-11/12 mx-auto">
+      <!-- offers start -->
 
-    <main></main>
+      <section>
+        <h3 class="text-center font-bold text-4xl">Best offers for you</h3>
+        <div class="flex gap-3 justify-center mt-10 flex-col lg:flex-row">
+          <div
+            class="bg-[#FFBF0F] flex justify-between p-10 gap-6 lg:gap-32 items-center rounded-2xl"
+          >
+            <div class="font-inter space-y-3">
+              <h3 class="font-extrabold text-4xl">15% OFF</h3>
+              <p class="font-semibold text-xl">on your next purchase</p>
+              <p class="text-gray-700">use by January 2024</p>
+            </div>
+            <div class="text-center">
+              <h4 class="font-bold text-3xl">NEW15</h4>
+              <p class="text-gray-600">Coupon Code</p>
+            </div>
+          </div>
+          <div
+            class="bg-[#F78C9C] flex justify-between p-10 gap-6 lg:gap-32 items-center rounded-2xl"
+          >
+            <div class="font-inter space-y-3">
+              <h3 class="font-extrabold text-4xl">20% OFF</h3>
+              <p class="font-semibold text-xl">on your next purchase</p>
+              <p class="text-gray-700">use by January 2024</p>
+            </div>
+            <div class="text-center">
+              <h4 class="font-bold text-3xl">Couple 20</h4>
+              <p class="text-gray-600">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <button class="btn btn-outline text-[#1DD100] border-[#1DD100]">
+            See All Offers
+          </button>
+        </div>
+      </section>
+      <!-- offers end -->
+
+      <!-- ticket section start -->
+      <section></section>
+    </main>
 
     <footer></footer>
     <script src="script.js"></script>
