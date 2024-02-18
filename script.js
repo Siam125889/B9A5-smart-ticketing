@@ -70,6 +70,8 @@ btn.addEventListener("click", function () {
   const couponElement = document.getElementById("coupon").value;
   const couponCode = couponElement.toUpperCase();
 
+  document.getElementById("coupon").classList.add("hidden");
+  document.getElementById("coupon-apply").classList.add("hidden");
   if (couponCode === "NEW15") {
     const discountAmount =
       parseFloat(document.getElementById("total").innerText) * 0.15;
@@ -89,7 +91,7 @@ btn.addEventListener("click", function () {
   } else {
     alert("invalid coupon");
     document.getElementById("coupon").value = "";
+    document.getElementById("coupon").classList.remove("hidden");
+    document.getElementById("coupon-apply").classList.remove("hidden");
   }
-  document.getElementById("coupon").classList.add("hidden");
-  document.getElementById("coupon-apply").classList.add("hidden");
 });
