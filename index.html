@@ -49,7 +49,9 @@
         class="mt-10 bg-[url('images/banner.png')] bg-cover bg-center rounded-2xl"
       >
         <div class="flex flex-col justify-center h-[450px] space-y-9">
-          <h3 class="font-extrabold text-6xl text-center text-white">
+          <h3
+            class="font-extrabold text-3xl md:text-5xl lg:text-6xl text-center text-white"
+          >
             End-to-End Travel with <br />
             <span class="text-[#1DD100]">BD Paribahan</span>
           </h3>
@@ -67,10 +69,10 @@
       </div>
     </header>
     <!-- main -->
-    <main class="font-raleway mt-16 lg:w-4/5 w-11/12 mx-auto">
+    <main>
       <!-- offers start -->
 
-      <section>
+      <section class="font-raleway mt-16 lg:w-4/5 w-11/12 mx-auto">
         <h3 class="text-center font-bold text-4xl">Best offers for you</h3>
         <div class="flex gap-3 justify-center mt-10 flex-col lg:flex-row">
           <div
@@ -109,7 +111,83 @@
       <!-- offers end -->
 
       <!-- ticket section start -->
-      <section></section>
+      <section
+        class="mt-16 w-full bg-[#F7F8F8] rounded-t-3xl border-t-2 border-[#1DD100]"
+      >
+        <!-- paribahan part -->
+        <div class="font-raleway pt-14">
+          <h3 class="text-center font-bold text-4xl mb-4">BD Paribahan</h3>
+          <p class="text-center text-[#03071299]">
+            Yes, you can run unit tests and view the results directly within the
+            app. The <br />integrated testing features allow for a streamlined .
+          </p>
+
+          <!-- ticket info -->
+          <div
+            class="flex justify-between bg-white p-4 w-11/12 lg:w-4/5 mx-auto mt-10 rounded-xl items-center flex-col md:flex-row lg:flex-row gap-4"
+          >
+            <!-- ticket details -->
+            <div class="lg:basis-8/12">
+              <div
+                class="flex items-center justify-between flex-col lg:flex-row gap-4 mb-5"
+              >
+                <div class="flex items-center gap-2">
+                  <img src="images/bus-logo.png" alt="" />
+                  <div>
+                    <p class="font-bold text-3xl">Greenline Paribahan</p>
+                    <p class="text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center bg-[#1DD10026] p-3 rounded-lg mb-4"
+                >
+                  <img src="images/seat-green.png" alt="" />
+                  <p class="font-inter text-[#1DD100]">
+                    <span id="seat-number">40</span> Seats left
+                  </p>
+                </div>
+              </div>
+              <div class="bg-[#F7F8F8] p-4 space-y-4 rounded-xl">
+                <div class="flex justify-between border-b-2 border-dashed pb-3">
+                  <p class="font-semibold text-[#03071299]">Route</p>
+                  <p class="font-semibold">Dhaka-Sylhet</p>
+                </div>
+                <div class="flex justify-between border-b-2 border-dashed pb-3">
+                  <p class="font-semibold text-[#03071299]">Departure Time</p>
+                  <p class="font-semibold">9:00 PM</p>
+                </div>
+                <div
+                  class="font-inter flex justify-between items-center gap-4 flex-col md:flex-row lg:flex-row"
+                >
+                  <p
+                    class="bg-[#0307120D] rounded-xl p-3 font-medium text-[#030712CC] px-3"
+                  >
+                    Boarding Point - Laxmipur
+                  </p>
+                  <p
+                    class="bg-[#0307120D] rounded-xl p-3 font-medium text-[#030712CC] px-3"
+                  >
+                    Dropping Point - Bogura
+                  </p>
+                  <p
+                    class="bg-[#0307120D] rounded-xl p-3 font-medium text-[#030712CC] px-3"
+                  >
+                    Est. Time - 11 Hour
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ticket price -->
+            <div class="basis-1/4">
+              <div class="text-center flex flex-col justify-center space-y-3">
+                <img class="w-12 mx-auto" src="images/fare.png" alt="" />
+                <p class="font-bold text-3xl">550 Taka</p>
+                <p class="font-semibold text-2xl text-[#03071299]">Per Seat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
