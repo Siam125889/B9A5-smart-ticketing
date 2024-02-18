@@ -56,6 +56,15 @@ function grandTotal() {
   setInnerText("grand-total", mainTotal);
 }
 
+function setInnerText(id, value) {
+  document.getElementById(id).innerText = value;
+}
+function getValue(id) {
+  const budget = parseInt(document.getElementById(id).innerText);
+
+  return budget;
+}
+
 const btn = document.getElementById("coupon-apply");
 btn.addEventListener("click", function () {
   const couponElement = document.getElementById("coupon").value;
@@ -84,12 +93,3 @@ btn.addEventListener("click", function () {
   document.getElementById("coupon").classList.add("hidden");
   document.getElementById("coupon-apply").classList.add("hidden");
 });
-
-function setInnerText(id, value) {
-  document.getElementById(id).innerText = value;
-}
-function getValue(id) {
-  const budget = parseInt(document.getElementById(id).innerText);
-
-  return budget;
-}
