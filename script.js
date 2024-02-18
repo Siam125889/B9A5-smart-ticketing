@@ -93,7 +93,3 @@ function getValue(id) {
 
   return budget;
 }
-
-if (document.getElementById("number").value.length == 1) {
-  console.log("0");
-}
