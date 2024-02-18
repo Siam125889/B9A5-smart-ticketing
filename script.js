@@ -5,14 +5,10 @@ const price = 550;
 
 for (const seat of seats) {
   seat.addEventListener("click", function (e) {
-    // seats left
-    seatsLeft--;
-    document.getElementById("seat-number").innerText = seatsLeft;
-
-    // enable apply coupon
-
     // seat count
     count++;
+
+    // coupon activate
     if (count == 4) {
       document.getElementById("coupon-apply").removeAttribute("disabled");
     }
@@ -20,6 +16,10 @@ for (const seat of seats) {
       alert("You can only book 4 seats");
       return;
     }
+    // seats left
+    seatsLeft--;
+    document.getElementById("seat-number").innerText = seatsLeft;
+
     const seatCount = document.getElementById("seat-count");
     seatCount.innerText = count;
     const seatText = e.target;
@@ -32,7 +32,6 @@ for (const seat of seats) {
     const td1 = document.createElement("td");
     td1.innerText = seatName;
     const td2 = document.createElement("td");
-
     td2.innerText = "Economy";
     const td3 = document.createElement("td");
     td3.innerText = price;

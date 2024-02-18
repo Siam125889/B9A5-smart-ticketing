@@ -23,6 +23,9 @@
       .font-inter {
         font-family: "Inter", sans-serif;
       }
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
   </head>
   <body>
@@ -60,10 +63,12 @@
             app. The integrated <br />
             testing features allow for a streamlined .
           </p>
-          <div href="#ticketing" class="text-center">
-            <button class="btn w-32 border-none bg-[#1DD100]">
-              Buy Tickets
-            </button>
+          <div class="text-center">
+            <a href="#ticketing"
+              ><button class="btn w-32 border-none bg-[#1DD100]">
+                Buy Tickets
+              </button></a
+            >
           </div>
         </div>
       </div>
@@ -211,17 +216,24 @@
               </div>
             </div>
             <div>
+              <div class="mt-6 relative h-12">
+                <img
+                  class="absolute right-0"
+                  src="images/Group 56.png"
+                  alt=""
+                />
+              </div>
               <div class="grid grid-cols-5 gap-8 items-center mt-10">
                 <p>A</p>
-                <button id="A1" class="btn seat px-6">A1</button>
-                <button id="A2" class="btn seat px-6">A2</button>
-                <button id="A3" class="btn seat px-6">A3</button>
-                <button id="A4" class="btn seat px-6">A4</button>
+                <button class="btn seat px-10">A1</button>
+                <button class="btn seat px-10">A2</button>
+                <button class="btn seat px-10">A3</button>
+                <button class="btn seat px-10">A4</button>
                 <p>B</p>
-                <button id="B1" class="btn seat px-6">B1</button>
-                <button id="B2" class="btn seat px-6">B2</button>
-                <button id="B3" class="btn seat px-6">B3</button>
-                <button id="B4" class="btn seat px-6">B4</button>
+                <button class="btn seat px-10">B1</button>
+                <button class="btn seat px-10">B2</button>
+                <button class="btn seat px-10">B3</button>
+                <button class="btn seat px-10">B4</button>
               </div>
             </div>
           </div>
