@@ -5,6 +5,8 @@ const price = 550;
 
 for (const seat of seats) {
   seat.addEventListener("click", function (e) {
+    document.getElementById("next-btn").removeAttribute("disabled");
+
     // seat count
     count++;
 
