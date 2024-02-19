@@ -45,7 +45,7 @@ for (const seat of seats) {
 }
 
 function totalPrice(id, value) {
-  const totalCost = parseInt(document.getElementById(id).innerText);
+  const totalCost = parseFloat(document.getElementById(id).innerText);
   let sum = totalCost + value;
   setInnerText("total", sum);
   grandTotal();
@@ -60,18 +60,18 @@ function setInnerText(id, value) {
   document.getElementById(id).innerText = value;
 }
 function getValue(id) {
-  const budget = parseInt(document.getElementById(id).innerText);
+  const budget = parseFloat(document.getElementById(id).innerText);
 
   return budget;
 }
 
 const btn = document.getElementById("coupon-apply");
 btn.addEventListener("click", function () {
-  const couponElement = document.getElementById("coupon").value;
-  const couponCode = couponElement.toUpperCase();
+  const couponCode = document.getElementById("coupon").value;
 
   document.getElementById("coupon").classList.add("hidden");
   document.getElementById("coupon-apply").classList.add("hidden");
+
   if (couponCode === "NEW15") {
     const discountAmount =
       parseFloat(document.getElementById("total").innerText) * 0.15;
@@ -80,7 +80,7 @@ btn.addEventListener("click", function () {
     restTotal.innerText =
       parseFloat(document.getElementById("total").innerText) - discountAmount;
     document.getElementById("coupon").value = "";
-  } else if (couponCode === "COUPLE 20") {
+  } else if (couponCode === "Couple 20") {
     const discountAmount =
       parseFloat(document.getElementById("total").innerText) * 0.2;
 
